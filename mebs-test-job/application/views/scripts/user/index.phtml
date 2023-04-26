@@ -1,0 +1,24 @@
+<section>
+    <h1>Users list</h1>
+    <hr />
+
+    <table class="table_users" cellspacing="0">
+        <thead>
+            <th>ID</th>
+            <th>Email</th>
+            <th>Created At</th>
+            <th>Status</th>
+        </thead>
+        <tbody>
+            <?php foreach ($this->users as $key => $user): ?>
+            <tr class="<?= ($key % 2 == 0) ? 'table_row_colored' : '' ?>">
+                <td><?= $user->id ?></td>
+                <td><?= $user->email ?></td>
+                <td><?= $user->creation_time ?></td>
+                <td><?= UnitManager::userStatus($user->status) ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+</section>

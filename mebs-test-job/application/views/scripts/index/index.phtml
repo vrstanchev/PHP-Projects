@@ -1,0 +1,59 @@
+<section>
+    <h1>Information</h1>
+    <hr />
+
+    <table class="table_information">
+        <tr>
+            <td rowspan="2">
+                <h3>Actions before you start</h3>
+                <ol>
+                    <li>
+                        Create a database for the test task, 
+                        for example `<i>mebs-test</i>`
+                    </li>
+                    <li>
+                        Configure access to this database in the file: <br />
+                        <i>application/configs/application.ini</i>
+                    </li>
+                    <li>
+                        Set the full path to your project and DoctrineMigrations folder 
+                        in the `<code>migrations-directory</code>` segment in the file: <br />
+                        <i>bin/migrations.xml</i>
+                    </li>
+                    <li>
+                        Open a terminal. 
+                        Go to the <i>bin</i> folder. 
+                        Run the migrations using the command: <br />
+                        <code>php doctrine migrations:migrate</code>
+                    </li>
+                    <li>Follow the link <a href="/user">USERS</a></li>
+                </ol>
+                <p>
+                    If there are no errors and one user is displayed on the page - 
+                    then go to the <a href="/index/job">Job Description</a>
+                </p>
+            </td>
+
+            <td class="table_cell_text_invert">
+                <h3>Project Requirements</h3>
+                <ul>
+                    <li>PHP: v7.0</li>
+                    <li>MySQL: v5.7</li>
+                    <li>ZendFramework: v1.11.11</li>
+                </ul>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="table_cell_text_invert">
+                <h3>Addition</h3>
+                <p>
+                    You can find Manual <br />
+                    <i>ZF-1.11-manual-en.zip</i> <br />
+                    in <code>public</code> folder
+                </p>
+            </td>
+        </tr>
+    </table>
+
+</section>

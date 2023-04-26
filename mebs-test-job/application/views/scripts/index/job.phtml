@@ -1,0 +1,55 @@
+<section>
+    <h1>Job Description</h1>
+    <hr />
+
+    <h2>1) Create a new Model to store new objects in the database</h2>
+    <p>The object is called "Leg".</p>
+    <p>
+        For each Leg there should be fields: 
+        <i>Location</i>, 
+        <i>ManualDate</i>, 
+        <i>DateLocation</i>.
+    </p>
+    <p><small>Add a new table via migration</small></p>
+
+
+    <h2>2) Create a new controller for "Legs"</h2>
+    <p>
+        Add 3 new pages: 
+        <i>Legs List</i>, 
+        <i>Leg View</i>, 
+        <i>Leg Create</i> / <i>Update</i> <small>(use one View for both pages)</small>, 
+        <i>Leg Remove</i> <small>(not use View for this pages)</small>
+    </p>
+    <p>To work with data, use Models and Doctrine ORM</p>
+
+
+    <h2>3) Setup the display of pages and objects</h2>
+    <p>
+        Use CSS to style your pages. 
+        Not using separate "libraries", just improve the display of pages a little.
+    </p>
+    <p>Use JS to confirm the deletion Leg after clicking on the "Delete" button.</p>
+
+
+    <h2>4) Backend. Working with the form</h2>
+    <p>When adding a new Leg, the form should have 2 fields: <i>Location</i>, <i>ManualDate</i></p>
+    <p>
+        The <i>DateLocation</i> value should be filled in automatically 
+        depending on the time zone of the location entered in the Location field.   
+    </p>
+
+    <hr />
+    <h3>IMPORTANT!</h3>
+    <p>A solution needs to be found to calculate time based on <b>UNLOC</b>.</p>
+    <p>
+        It is necessary to use a file with this data or a table in the database, 
+        depending on which solution you consider the best.
+    </p>
+    <p>
+        It should be taken into account that in countries 
+        the time zone may change depending on the <i>"Summer"</i> / <i>"Winter"</i> time. 
+        This also needs to be taken into account and implemented.
+    </p>
+
+</section>
