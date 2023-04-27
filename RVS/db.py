@@ -1,10 +1,10 @@
 import sqlite3
 def dbwrite(dt):
-	try:
-    sqliteconn = sqlite3.connect('qr.db')
-    cursor = sqliteconn.cursor()
-    spl1=dt.split(",")
-    insertqr = """INSERT INTO qrusers
+    try:
+        sqliteconn = sqlite3.connect('qr.db')
+        cursor = sqliteconn.cursor()
+        spl1=dt.split(",")
+        insertqr = """INSERT INTO qrusers
                           ( FNAME, LNAME, AREA, SPORT) 
                           VALUES ( ?, ?, ?, ?);"""
 
@@ -12,15 +12,19 @@ def dbwrite(dt):
         cursor.execute(insertqr, dataparam)
         sqliteconn.commit()
         print("Done")
+    except sqlite3.Error as error:
+        print("Error while open a sqlite table", error)
+    finally:
+     if sqliteconn:
+      sqliteconn.close()
+      print("sqlite connection is closed")
+                    
+                
+        
+    
    
     
-    except sqlite3.Error as error:
-    print("Error while open a sqlite table", error)
-    finally:
-    if sqliteconn:
-        sqliteconn.close()
-        print("sqlite connection is closed")
 
 
-	
+    
 
