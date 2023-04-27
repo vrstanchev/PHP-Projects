@@ -1,0 +1,18 @@
+
+<?php  
+$title = 'Add new Leg'; 
+$this->headTitle($title);  
+?>  
+<h1>hello</h1>  
+<?php 
+if(!empty($form)) {  
+   $form->setAttribute('action', $this->url('tutorial', array('action' => 'create'))); 
+   $form->prepare();  
+   echo $this->form()->openTag($form); 
+   echo $this->formRow($form->get('Location'))."<br>"; 
+   echo $this->formRow($form->get('ManualDate'))."<br>"; 
+   echo $this->formRow($form->get('DateLocation'))."<br>"; 
+   echo $this->formSubmit($form->get('submit')); 
+   echo $this->form()->closeTag(); 
+}
+

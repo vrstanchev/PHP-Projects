@@ -17,8 +17,8 @@ def dbwrite(dt):
     except sqlite3.Error as error:
     print("Error while open a sqlite table", error)
     finally:
-    if sqliteConnection:
-        sqliteConnection.close()
+    if sqliteconn:
+        sqliteconn.close()
         print("sqlite connection is closed")
 
 

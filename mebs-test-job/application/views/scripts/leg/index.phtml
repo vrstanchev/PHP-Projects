@@ -1,0 +1,25 @@
+<section>
+    <h1>Legs list</h1>
+    <hr />
+
+    <table class="table_legs" cellspacing="0">
+        <thead>
+            <th>LegId</th>
+            <th>Location</th>
+            <th> ManualDate</th>
+            <th>DateLocation</th>
+        </thead>
+        <tbody>
+            <?php foreach ($this->legs as $key => $leg): ?>
+            <tr class="<?= ($key % 2 == 0) ? 'table_row_colored' : '' ?>">
+                <td><?= $leg->leg_id ?></td>
+                <td><?= $leg->location ?></td>
+                <td><?= $leg->manualdate ?></td>
+                <td><?= UnitManager::userStatus($leg->datelocation) ?></td>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+
+</section>
+

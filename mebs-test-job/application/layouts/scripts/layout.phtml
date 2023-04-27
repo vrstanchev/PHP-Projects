@@ -1,0 +1,22 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title><?= isset($this->title)? $this->title : "Test Job" ?></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+  </head>
+
+  <body>
+    <article id="content">
+      <?php echo $this->layout()->content ?>
+    </article>
+    <footer>
+      <p>
+        <a href="/leg">This link should work with your completed job</a>
+        <a href="/" class="f_right">Home</a>
+      </p>
+    </footer>
+  </body>
+</html>
