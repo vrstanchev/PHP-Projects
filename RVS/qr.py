@@ -22,9 +22,9 @@ while True:
         if data:
             print("data found: ", data)
             db.dbwrite(data)
+            break
    
-    if(cv2.waitKey(1) == ord("q")):
-        break
+    
 # free camera object and exit
 cap.release()
 cv2.destroyAllWindows()
