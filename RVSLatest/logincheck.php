@@ -12,7 +12,6 @@ $stat=$db->query($isql);
 $cnt=$stat->fetchColumn();
 if($cnt==1) {
 	$_SESSION['username']=$uname1;
-	$_SESSION['job']=$status;
 header("Location:inner.php");
 } 
 else{
