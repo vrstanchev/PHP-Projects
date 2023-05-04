@@ -10,8 +10,7 @@
 <body>
 
 <h1>RVS</h1>
-<p><b>rvs</b></p>
-</header>    
+<p><b>rvs</b></p>  
 <?php
 session_start();
 echo '<b>';
