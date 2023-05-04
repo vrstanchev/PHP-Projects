@@ -8,15 +8,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <header class="header">
 
-ви урок</a>
-машно</a>
-ценка</a>
-
-
-<h1>ThinkGNU</h1>
-<p><b>open-source lessons</b></p>
+<h1>RVS</h1>
+<p><b>rvs</b></p>
 </header>    
 <?php
 session_start();
