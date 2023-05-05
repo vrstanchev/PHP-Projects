@@ -8,8 +8,8 @@
     <body>
         <h1>Вход</h1>
         <form method="post"  action="logincheck.php">
-            <input type="text" name="uname1" placeholder="Enter username:"></br>
-            <input type="password" name="upass" placeholder="Enter password:"></br>
+            <input type="text" name="loguname1" placeholder="Enter username:"></br>
+            <input type="password" name="logupass" placeholder="Enter password:"></br>
   <input type="submit" value="Login" name="submit">
         </form>
          
