@@ -1,9 +1,9 @@
 
 <?php 
 if($_POST){
-  $FNAME=$_POST['uname1'] ;
-    $LNAME=$_POST['upass'] ;
-     $encpass=md5($_POST['upass']);
+  $FNAME=$_POST['uname2'] ;
+    $LNAME=$_POST['upass1'] ;
+     $encpass=md5($_POST['upass1']);
     try{
         
         include('conn.php'); 
