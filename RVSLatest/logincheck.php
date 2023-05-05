@@ -1,9 +1,9 @@
 <?php 
 if($_POST){
     session_start();
-  $uname1=$_POST['uname1'] ;
-    $upass  = trim($_POST['upass']);
- $encpass=md5($_POST['upass']);
+  $uname1=$_POST['loguname1'] ;
+    $upass  = trim($_POST['logupass']);
+ $encpass=md5($_POST['logupass']);
     try{
         include('conn.php'); 
         
