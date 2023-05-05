@@ -9,8 +9,8 @@
     <body>
         <h1>Регистрация</h1>
         <form method="post" action="admadd.php" enctype="multipart/form-data">
-            <input type="text" name="uname1"  placeholder="Enter username:"></br>
-                <input type="password" name="upass"  placeholder="Enter password:"></br>
+            <input type="text" name="uname2"  placeholder="Enter username:"></br>
+                <input type="password" name="upass1"  placeholder="Enter password:"></br>
   <input type="submit" value="Add" name="submit">
         </form>
     </body>
