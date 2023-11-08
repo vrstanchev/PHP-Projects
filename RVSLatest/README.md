@@ -1,4 +1,6 @@
 ## Embedded Systems Project RaspberryPi QR Scanner
+## License: 
+GNU GPL v3
 ## Tech Stack:
 - Backend: PHP,SQLite3,Apache2
 - FrontEnd: HTML,CSS,JS
