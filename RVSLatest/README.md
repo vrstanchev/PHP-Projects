@@ -5,5 +5,5 @@
   ##Requirenments:
 - Hardware: RaspberryPi 4
 - Software: Debian, PHP,SQLite3,Apache2,Python3,opencv packages installed
-  ##Team
+  ##Team    
   Peter Velchev, Veselin Stanchev
